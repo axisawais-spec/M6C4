@@ -8,6 +8,7 @@
             background-color: red;
              margin: 0;
             font-family: 'Times New Roman', Times, serif;
+            
         }
         .heading {
             text-align: center;
@@ -36,6 +37,9 @@
             font-weight: bold;
             background-color: yellow;
         }
+        img{
+          border-radius: 20%;  
+        }
     </style>
 </head>
 
@@ -49,6 +53,42 @@
     <h1 class="heading">
         Gallery
     </h1>
+    <section>
+        <img src="images.jpg" height="300px" width="100%" class="myslides" alt="">
+        <img src="images (1).jpg" height="300px" width="100%" class="myslides" alt="">
+        <img src="images (2).jpg" height="300px" width="100%" class="myslides" alt="">
+        <img src="images (3).jpg" height="300px" width="100%" class="myslides" alt="">
+        <img src="images (4).jpg" height="300px" width="100%" class="myslides" alt="">
+    </section>
+    <br>
+    <section>
+        <img src="OIP.jpg" height="125px" width="33%" class="grid" alt="">
+        <img src="OIP (1).jpg" height="125px" width="33%" class="grid" alt="">
+        <img src="OIP (2).jpg" height="125px" width="32%" class="grid" alt="">
+        <img src="OIP (3).jpg" height="125px" width="33%" class="grid" alt="">
+        <img src="OIP (4).jpg" height="125px" width="33%" class="grid" alt="">
+        <img src="OIP (5).jpg" height="125px" width="32%" class="grid" alt="">
+        <img src="OIP (6).jpg" height="125px" width="49%" class="grid" alt="">
+        <img src="OIP (7).jpg" height="125px" width="50%" class="grid" alt="">
+    </section>
+    <script>
+        var index=0
+        slideshow()
+        function slideshow(){
+            var i
+            var x=document.getElementsByClassName("myslides")
+            for(i=0;i<x.length;i++){
+                x[i].style.display="none"
+            }
+            index++
+            if(index>x.length){
+                index=1
+            }
+            x[index-1].style.display="block"
+            setTimeout(slideshow,3000)
+
+        }
+    </script>
 </body>
 
 </html>
