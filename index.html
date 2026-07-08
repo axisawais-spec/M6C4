@@ -4,14 +4,18 @@
 <head>
     <title>Document</title>
     <style>
-        body{
+        body {
             margin: 0;
             font-family: 'Times New Roman', Times, serif;
+            padding: 0;
+
         }
-        .topnav{
+
+        .topnav {
             background-color: black;
             overflow: hidden;
         }
+
         .topnav a {
             float: left;
             color: orange;
@@ -22,16 +26,85 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
         }
-.topnav a:hover{
-    background-color: yellow;
-    color: black;
-}
+
+        .topnav a:hover {
+            background-color: yellow;
+            color: black;
+        }
+
         .active {
             color: red;
             font-size: 20px;
             font-weight: bold;
             background-color: yellow;
         }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            color: black;
+            text-align: center;
+
+        }
+
+        .para1,
+        .para2,
+        .para3 {
+            background-position: center;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+        .para1{
+            background-image: url("images\ \(8\).jpg");
+            min-height: 100vh;
+        }
+        .para2{
+            background-image: url("images\ \(8\).jpg");
+            min-height: 400px;
+        }
+        .para3{
+            background-image: url("images\ \(8\).jpg");
+            min-height: 400px;
+        }
+        .paratext{
+            position: absolute;
+            top: 50%;
+            
+       
+            text-align: center;
+            color: blue;
+            font-size: 20px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            transform: translateY(-50%,-50%);
+        }
+        .paratext .border{
+            background-color: yellow;
+            padding: 20px;
+
+        }
+        .paratext .border .trans{
+            background-color: transparent;
+        }
+        .section{
+            text-align: center;
+            padding: 50px 80px;
+        }
+        .section-light{
+            background-color: pink;
+            color: brown;
+        }
+          .section-dark{
+            background-color: brown;
+            color: pink;
+        }
+        
     </style>
 </head>
 
@@ -42,6 +115,91 @@
         <a href="gallery.html"> gallery</a>
         <a href="contactus.html"> contact</a>
     </div>
+    <div class="para1">
+        <div class="paratext">
+            <span class="border">
+                Welcome To My Portfolio
+            </span>
+        </div>
+    </div>
+    <section class="section-light">
+        <h2>
+            Ahmad Awais
+
+        </h2>
+        <p>
+            My name is ahmad awais and i am 17 years old.
+        </p>
+    </section>
+<div class="para2">
+    <div class="paratext">
+        <span class="border trans">
+            Education is the most powerful weapon you can use to change the world.
+        </span>
+    </div>
+</div>
+    <section class="section-dark">
+        <h2>
+            My Achievments
+
+        </h2>
+        <p>
+        <ul>
+            <li>
+                National Badminton Qualification
+            </li>
+            <li>
+                Punjab Silver Medal Badminton
+            </li>
+            <li>
+                Math lympics Bronze Medal
+            </li>
+
+        </ul>
+        </p>
+    </section>
+
+    <div class="para3">
+        <div class="paratext">
+            <span class="border trans">
+                Education is the most powerful weapon you can use to change the world.
+            </span>
+        </div>
+    </div>
+    <section class="section-light">
+        <h2>
+            My Projects
+
+        </h2>
+        <p>
+        <ul>
+            <li>
+                Documentary on Underage Driving
+            </li>
+            <li>
+                Documentary on Life of A Security Guard
+            </li>
+            <li>
+                Website Development
+            </li>
+
+        </ul>
+        </p>
+    </section>
+    <div class="para1">
+        <div class="paratext">
+            <span class="border">
+                Thank You
+            </span>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>
+                @copy all rights and reserved by awais
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
